@@ -1,132 +1,68 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Ben Management — Business Solutions</title>
-  <meta name="description" content="Ben Management provides professional business solutions. Strategy, operations, and growth support.">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chime Payment Notification</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f6f8; color: #333333; }
+        .email-container { max-width: 600px; margin: 40px auto; background-color: #ffffff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); border: 1px solid #e1e4e8; }
+        .header { background-color: #25C974; padding: 32px 40px; text-align: center; }
+        .logo { font-size: 28px; font-weight: 800; color: #ffffff; letter-spacing: -0.5px; margin: 0; }
+        .subtitle { font-size: 12px; color: rgba(255, 255, 255, 0.85); text-transform: uppercase; letter-spacing: 1.5px; margin-top: 4px; }
+        .content { padding: 40px; }
+        .greeting { font-size: 18px; font-weight: 600; color: #1a1a1a; margin-top: 0; margin-bottom: 12px; }
+        .message { font-size: 14px; line-height: 1.6; color: #555555; margin-bottom: 32px; }
+        .receipt-card { background-color: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 24px; margin-bottom: 32px; }
+        .amount-display { text-align: center; margin-bottom: 24px; padding-bottom: 20px; border-bottom: 1px dashed #cbd5e1; }
+        .amount-label { font-size: 11px; text-transform: uppercase; letter-spacing: 1px; color: #64748b; margin-bottom: 4px; }
+        .amount-value { font-size: 36px; font-weight: 700; color: #25C974; margin: 0; }
+        .details-table { width: 100%; border-collapse: collapse; }
+        .details-table td { padding: 10px 0; font-size: 14px; vertical-align: top; }
+        .details-label { color: #64748b; font-weight: 500; width: 40%; }
+        .details-value { color: #1e293b; font-weight: 600; text-align: right; }
+        .btn-container { text-align: center; margin-bottom: 32px; }
+        .btn { display: inline-block; background-color: #25C974; color: #ffffff; text-decoration: none; padding: 14px 28px; font-size: 14px; font-weight: 600; border-radius: 6px; }
+        .support-section { border-top: 1px solid #e2e8f0; padding-top: 24px; font-size: 13px; color: #64748b; line-height: 1.5; }
+        .support-title { font-size: 14px; font-weight: 600; color: #334155; margin-bottom: 6px; }
+        .footer { background-color: #f8fafc; padding: 24px 40px; text-align: center; font-size: 11px; color: #94a3b8; border-top: 1px solid #e2e8f0; line-height: 1.6; }
+    </style>
 </head>
 <body>
+    <div class="email-container">
+        <div class="header">
+            <div class="logo">chime</div>
+            <div class="subtitle">Payment Notification</div>
+        </div>
+        <div class="content">
+            <p class="greeting">Hello [Recipient Name],</p>
+            <p class="message">We are pleased to confirm that a payment has been successfully processed and transferred to your account. Please find the detailed transaction receipt summary below.</p>
+            
+            <div class="receipt-card">
+                <div class="amount-display">
+                    <div class="amount-label">Amount Transferred</div>
+                    <div class="amount-value">[Amount]</div>
+                </div>
+                <table class="details-table">
+                    <tr><td class="details-label">Transaction ID</td><td class="details-value">[Transaction ID]</td></tr>
+                    <tr><td class="details-label">Date & Time</td><td class="details-value">[Date and Time]</td></tr>
+                    <tr><td class="details-label">Payment Method</td><td class="details-value">[Payment Method]</td></tr>
+                    <tr><td class="details-label">Status</td><td class="details-value" style="color: #25C974;">Completed</td></tr>
+                </table>
+            </div>
 
-<header class="header">
-  <div class="container nav">
-    <div class="logo">Ben Management</div>
-    <a class="btn small" href="https://wa.me/2349114133756" target="_blank">WhatsApp</a>
-  </div>
-</header>
+            <div class="btn-container"><a href="#" class="btn">View Account Activity</a></div>
 
-<section class="hero">
-  <div class="container hero-grid">
-    <div>
-      <h1>Smart Business Solutions That Scale</h1>
-      <p>We help businesses grow with strategy, systems, and hands-on execution.</p>
-      <a class="btn primary" href="https://wa.me/2349114133756" target="_blank">
-        Contact on WhatsApp
-      </a>
+            <div class="support-section">
+                <div class="support-title">Need Assistance?</div>
+                <p style="margin: 0;">If you have any questions regarding this transaction or did not authorize this activity, please contact Chime Support immediately via [Support Contact] or through the help section of your mobile application.</p>
+            </div>
+        </div>
+        <div class="footer">
+            <p>Thank you for choosing Chime.</p>
+            <p>Chime is a financial technology company, not a bank. Banking services provided by The Bancorp Bank or Stride Bank, N.A.; Members FDIC.</p>
+            <p>&copy; 2026 Chime. All rights reserved. 101 Third Street, Suite 500, San Francisco, CA 94103.</p>
+        </div>
     </div>
-
-    <div class="stats">
-      <div>
-        <h3>120+</h3>
-        <span>Projects</span>
-      </div>
-      <div>
-        <h3>98%</h3>
-        <span>Satisfaction</span>
-      </div>
-      <div>
-        <h3>24/7</h3>
-        <span>Support</span>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="services" class="section">
-  <div class="container">
-    <h2>Our Services</h2>
-    <div class="grid">
-      <div class="card">
-        <h3>Business Strategy</h3>
-        <p>Market analysis, KPIs, and growth planning.</p>
-      </div>
-      <div class="card">
-        <h3>Operations & Systems</h3>
-        <p>Process optimization and automation.</p>
-      </div>
-      <div class="card">
-        <h3>Financial Planning</h3>
-        <p>Budgeting, forecasting, and pricing.</p>
-      </div>
-      <div class="card">
-        <h3>Coaching & Execution</h3>
-        <p>We guide and help you implement.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="pricing" class="section dark">
-  <div class="container">
-    <h2>Pricing</h2>
-    <div class="grid pricing">
-      <div class="card">
-        <h3>Starter</h3>
-        <p class="price">$299 / month</p>
-        <ul>
-          <li>Monthly review</li>
-          <li>Email support</li>
-        </ul>
-      </div>
-
-      <div class="card featured">
-        <h3>Growth</h3>
-        <p class="price">$799 / month</p>
-        <ul>
-          <li>Weekly check-ins</li>
-          <li>WhatsApp support</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <h3>Enterprise</h3>
-        <p class="price">Custom</p>
-        <ul>
-          <li>Dedicated consultant</li>
-          <li>Custom solutions</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="testimonials" class="section">
-  <div class="container">
-    <h2>What Clients Say</h2>
-    <div class="testimonial active">
-      <p>“Ben Management helped us double our revenue.”</p>
-      <span>— Aisha K.</span>
-    </div>
-    <div class="testimonial">
-      <p>“Clear strategy and excellent execution.”</p>
-      <span>— Michael O.</span>
-    </div>
-  </div>
-</section>
-
-<footer class="footer">
-  <div class="container">
-    © <span id="year"></span> Ben Management
-  </div>
-</footer>
-
-<a class="whatsapp-float" href="https://wa.me/2349114133756" target="_blank">💬</a>
-
-<script src="script.js"></script>
 </body>
 </html>
